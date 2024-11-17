@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .chat-container {
+            width: 60%;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+        .message-area {
+            padding: 20px;
+            height: 400px;
+            overflow-y: auto;
+        }
+        .message-area .bot-message,
+        .message-area .user-message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 20px;
+            color: #333;
+        }
+        .bot-message {
+            background: #e0e0e0;
+            align-self: flex-start;
+        }
+        .user-message {
+            background: #007bff;
+            color: #fff;
+            align-self: flex-end;
+        }
+        .footer {
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 0 0 8px 8px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            Chatbot Application
+        </div>
+        <div class="message-area">
+            <!-- Bot and user messages will be appended here -->
+        </div>
+        <div class="footer">
+            <input type="text" class="input-field" placeholder="Type a message..." />
+        </div>
+    </div>
+    <script>
+        // Initialize websocket or ajax setup here to interact with the backend.
+    </script>
+</body>
+</html>
